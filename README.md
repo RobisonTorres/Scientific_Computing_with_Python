@@ -1,4 +1,4 @@
-# Scientific_Computing_with_Python
+# Scientific Computing with Python
 
 Projects related to this certification:
 
