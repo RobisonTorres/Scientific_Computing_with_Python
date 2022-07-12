@@ -2,8 +2,8 @@
 
 Projects related to this certification:
 
-   <br />Arithmetic Formatter
-    Time Calculator
-    Budget App
-    Polygon Area Calculator
+   Arithmetic Formatter<br />
+    Time Calculator<br />
+    Budget App<br />
+    Polygon Area Calculator<br />
     Probability Calculator
