@@ -22,3 +22,21 @@ Next, create an `experiment` function in `prob_calculator.py` (not inside the `H
 * `num_experiments`: The number of experiments to perform. (The more experiments performed, the more accurate the approximate probability will be.)
 
 The `experiment` function should return a probability. 
+
+For example, let's say that you want to determine the probability of getting at least 2 red balls and 1 green ball when you draw 5 balls from a hat containing 6 black, 4 red, and 3 green. To do this, we perform `N` experiments, count how many times `M` we get at least 2 red balls and 1 green ball, and estimate the probability as `M/N`. Each experiment consists of starting with a hat containing the specified balls, drawing a number of balls, and checking if we got the balls we were attempting to draw.
+
+Here is how you would call the `experiment` function based on the example above with 2000 experiments:
+
+```
+hat = Hat(black=6, red=4, green=3)
+probability = experiment(hat=hat, 
+                  expected_balls={"red":2,"green":1},
+                  num_balls_drawn=5,
+                  num_experiments=2000)
+```
+
+Since this is based on random draws, the probability will be slightly different each time the code is run.
+
+<br>
+
+[FreeCodeCamp](https://www.freecodecamp.org/learn/scientific-computing-with-python/scientific-computing-with-python-projects/probability-calculator)
